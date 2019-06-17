@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*MENU-------------------------------*/
+
+span {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+    color: white;
+    position: fixed;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 70px;
+    line-height: 100px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    /*
+    display: flex;
+    justify-content: center;
+*/
+    position: absolute;
+    left: 46vw;
+    bottom: 6%;
+    font-size: 8vw;
+    color: white;
+}
+
+
+/*BODY EN SECTIONS-----------------------*/
+
+body {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    border-bottom: 1px solid white;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+
+.home section:nth-child(1) {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.home section:nth-child(1) video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    filter: grayscale(1);
+    opacity: .5;
+}
+
+.home section:nth-child(2) {
+    background-color: peru;
+}
+
+.home section:nth-child(3) {
+    background-color: gray;
+}
+
+.home section:nth-child(4) {
+    background-color: aquamarine;
+}
+
+.home section:nth-child(5) {
+    background-color: cadetblue;
+}
+
+.home section:nth-child(6) {
+    background-color: pink;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    width: 95%;
+    left: 0;
+    /*    font-size: 5em;*/
+    font-size: 15vw;
+    letter-spacing: -10px;
+    text-shadow: -5px 5px 3px grey;
+    padding-left: 5%;
+}
+
+h2 a {
+    text-shadow: -5px 5px 3px orange;
+    color: white;
+    text-decoration: none;
+}
+
+h2 a:visited {
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Anonymous Pro', monospace;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 0px;
+    background-color: black;
+    width: 20%;
+    padding: 10px;
+}

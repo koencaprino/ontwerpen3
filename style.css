@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+
+______________________________INTRO_____________
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+.bodyintro {
+    /*    background-color: grey;*/
+    /*background-image: url(BiggieBG.jpg);*/
+    background-image: url(biggiebg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: introbg 3.5s linear infinite;
+    background-position: top;
+}
+
+@keyframes introbg {
+    0%{background-size: 100%;}
+    50%{background-size: 102%;}
+    100%{background-size: 100%;}
+}
+
+
+/*
+embed {
+    display: none;
+    animation: backgroundmusic 2s;
+    animation-delay: 16s;
+}
+
+@keyframes backgroundmusic {
+    from {
+        display: none;
+    }
+    to {
+        display: flex;
+    }
+}
+*/
+
+.bodyintro h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    /*    text-shadow: -5px 5px 3px red;*/
+    font-size: 14em;
+    letter-spacing: -20px;
+    position: absolute;
+    top: 160px;
+    margin-left: 15.5%;
+    opacity: 0;
+    animation: introbiggie 1.4s ease-out forwards;
+    animation-delay: 17s;
+}
+
+@keyframes introbiggie {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+        top: 160px
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        text-shadow: -5px 5px 3px grey;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: -25%;
+    opacity: 0;
+    animation: bekijkode 1s ease-out forwards;
+    animation-delay: 18.5s;
+}
+
+@keyframes bekijkode {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bekijkode {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    bottom: 200px;
+    font-size: 3em;
+}
+
+main {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90vw;
+    animation: dissolve 1s ease-in forwards;
+    animation-delay: 17s;
+}
+
+.typewriter p {
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+    /*    font-family: 'Helvetica Neue';*/
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    font-size: 3em;
+    /*  BRON: https://www.youtube.com/watch?v=IGyUHTg6R-k*/
+}
+
+.intro1 {
+    text-align: center;
+    animation: intro1 9s forwards;
+}
+
+.intro2 {
+    text-align: center;
+    animation: intro1 7.5s forwards;
+    animation-delay: 8s;
+    margin-top: -11.7vh;
+}
+
+.intro3 {
+    text-align: center;
+    margin: auto;
+    margin-top: -6.7vh;
+    animation: intro1 3s forwards;
+    animation-delay: 15.4s;
+}
+
+.intro3 p:nth-child(1) {
+    animation: typing 1.5s steps(18, end) forwards;
+    opacity: 0;
+    animation-delay: 15.4s;
+}
+
+.intro1 p:nth-child(1) {
+    margin-top: 40vh;
+    margin-bottom: 12px;
+    animation: typing 1.5s steps(18, end) forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.intro1 p:nth-child(2) {
+    animation: typing 1.5s steps(18, end) forwards;
+    animation-delay: 2.5s;
+    margin-bottom: 12px;
+    opacity: 0;
+}
+
+.intro1 p:nth-child(3) {
+    animation: typing 1.5s steps(18, end) forwards;
+    animation-delay: 4s;
+    margin-bottom: 12px;
+    opacity: 0;
+}
+
+.intro1 p:nth-child(4) {
+    animation: typing 1.5s steps(18, end) forwards;
+    animation-delay: 5.5s;
+    margin-bottom: 12px;
+    opacity: 0;
+}
+
+.intro2 p:nth-child(1) {
+    margin-bottom: 12px;
+    animation: typing 1.5s steps(18, end) forwards;
+    animation-delay: 9s;
+    opacity: 0;
+}
+
+.intro2 p:nth-child(2) {
+    margin-bottom: 12px;
+    animation: typing 1.5s steps(18, end) forwards;
+    animation-delay: 10.5s;
+    opacity: 0;
+}
+
+.intro2 p:nth-child(3) {
+    margin-bottom: 12px;
+    animation: typing 1.5s steps(18, end) forwards;
+    animation-delay: 12s;
+    opacity: 0;
+}
+
+@keyframes intro1 {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        opacity: 1;
+        width: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes dissolve {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
