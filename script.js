@@ -16,3 +16,16 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+
+//Freestylaa
+
+function playSample(sampleName){
+    var sample = document.getElementById(sampleName);
+    sample.play();
+    document.getElementById("10crack").volume = 0.3;
+    document.getElementById("illest").volume = 0.3;
+    document.getElementById("ifyou").volume = 0.5;
+     document.getElementById("checkit").volume = 1;
+    document.getElementById("ah").volume = 0.5;
+}

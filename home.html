@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Ode aan Biggie</title>
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">Schrijf een ode</a>
-    <a href="#">Muziek</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a onclick="closeNav()" href="home.html#freestyle">Freestyle</a>
+            <a onclick="closeNav()" href="home.html#rouw">Rouwe Directheid</a>
+            <a onclick="closeNav()" href="home.html#aantrekking">Aantrekkingskracht</a>
+            <a onclick="closeNav()" href="home.html#verhalen">Verhalen</a>
+            <a onclick="closeNav()" href="home.html#teksten">Teksten</a>
+            <a onclick="closeNav()" href="home.html#ode">Ode</a>
+        </div>
+    </div>
+    <span onclick="openNav()">&#9776;</span>
 
-<!--   <div class="menu"> <div class="close"><p>close</p></div> </div>-->
+    <!--   <div class="menu"> <div class="close"><p>close</p></div> </div>-->
 
 
     <main class="home">
 
-        <section>
+        <section id="freestyle">
             <video src="17freestyle.mp4" poster="biggiebg.jpg" autoplay="autoplay" loop="loop" muted playsinline>
                 <source src="17freestyle.mp4" type="mp4">
             </video>
-            <h2>Als 17 jarige deed hij een <a href="freestyle.html">freestyle op straat in Brooklyn.</a><h4>Video</h4></h2></section>
-        <section>
-            <h2>De rouwe directheid van Biggie was toen al te horen.</h2></section>
-        <section>
-            <h2>In combinatie met zijn aantrekkings kracht</h2></section>
-        <section>
-            <h2>Kon hij op een niets- ontziende wijze zijn verhalen vertellen</h2></section>
-        <section>
-            <h2>Zijn teksten kwamen eruit met souplesse...</h2></section>
-        <section>
+            <h2>Als 17 jarige deed hij een freestyle op straat in Brooklyn.</h2>
+            <a class="lezen" href="17years.html">Lees meer</a>
+            <a class="extra" href="freestyle.html">Freestyle</a>
+        </section>
+
+        <section id="rouw">
+            <h2>De rouwe directheid van Biggie was toen al te horen.</h2>
+            <a class="lezen" href="">Lees meer</a>
+            <a class="extra" href="">Freestyle</a>
+        </section>
+
+        <section id="aantrekking">
+            <h2>In combinatie met zijn aantrekkings kracht</h2>
+            <a class="lezen" href="">Lees meer</a>
+            <a class="extra" href="">Freestyle</a>
+        </section>
+
+        <section id="verhalen">
+            <h2>Kon hij op een niets- ontziende wijze zijn verhalen vertellen</h2>
+            <a class="lezen" href="">Lees meer</a>
+            <a class="extra" href="">Freestyle</a>
+        </section>
+
+        <section id="teksten">
+            <h2>Zijn teksten kwamen eruit met souplesse...</h2>
+            <a class="lezen" href="">Lees meer</a>
+            <a class="extra" href="">Freestyle</a>
+        </section>
+
+        <section id="ode">
             <h2>Zoals niemand dat ooit kon, zelfs zijn navolgers niet.</h2>
+            <a class="lezen" href="">Lees meer</a>
+            <a class="extra" href="">Freestyle</a>
         </section>
     </main>
 
