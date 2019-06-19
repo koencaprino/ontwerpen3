@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="inner.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<!--                                    BODY-->
+
+<body class="bodyinner">
+
+    <!--                                    MENU-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="overlay-content">
+            <a  onclick="closeNav()" href="home.html#freestyle">Freestyle</a>
+            <a  onclick="closeNav()" href="home.html#rouw"> Directheid</a>
+            <a onclick="closeNav()" href="home.html#aantrekking">Aantrekking</a>
+            <a onclick="closeNav()" href="home.html#verhalen">Verhalen</a>
+            <a onclick="closeNav()" href="home.html#teksten">Teksten</a>
+            <a onclick="closeNav()" href="home.html#ode">Ode</a>
+
+        </div>
+        </div>
+    </div>
+    <span onclick="openNav()">&#9776;</span>
+    <!--                                    MENU-->
+
+    <!--                                    TERUG HOME BUTTON-->
+    <a href="home.html#freestyle" class="back">‹</a>
+
+    <!--                                   SECTION DRUM MACHINE-->
+    <!--   <section class="sectionfreestyle">-->
+    <section class="tekst black sf1">
+        <header class="freestyleheader">
+            <video src="17freestyle.mp4" autoplay="autoplay" loop="loop" muted playsinline>
+                <source src="17freestyle.mp4" type="mp4">
+            </video>
+            <h3>Biggie Freestyle Drummachine </h3>
+        </header>
+
+        <audio src="10crack.mp3" autostart="false" id="10crack"></audio>
+
+        <audio src="checkit.mp3" autostart="flase" id="checkit"></audio>
+
+        <audio src="somebody.mp3" autostart="flase" id="somebody"></audio>
+
+        <audio src="illest.mp3" autostart="flase" id="illest"></audio>
+
+        <audio src="ifyou.mp3" autostart="flase" id="ifyou"></audio>
+
+        <audio src="ah.mp3" autostart="flase" id="ah"></audio>
+
+        <div class="sectionfreestyle">
+
+            <div class="tunebutton" onclick="playSample('10crack')"> BEAT</div>
+
+            <div class="tunebutton" onclick="playSample('checkit')"> Check it</div>
+
+            <div class="tunebutton" onclick="playSample('somebody')"> Somebody </div>
+
+            <div class="tunebutton" onclick="playSample('illest')"> Illest</div>
+
+            <div class="tunebutton" onclick="playSample('ifyou')"> If you don't</div>
+
+            <div class="tunebutton" onclick="playSample('ah')"> Ah</div>
+        </div>
+
+<!--        <a class="down" href="#next">‹</a>-->
+    </section>
+
+
+<!--
+    <section class="tekst sf2" id="next" >
+
+        <article>
+           <iframe width="100%" height="220" src="https://www.youtube.com/embed/zSx03q1-1KA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                Er bestaat een prachtig filmpje van The Notorious B.I.G., opgenomen eind jaren tachtig. Wat we zien is een straathoek in Brooklyn. De achtergrond: de luifel van een grocery store, nauwelijks leesbaar, de lens is onscherp. Daar omheen: tientallen toeschouwers, allemaal enthousiast. Ze vormen een halve cirkel.
+            </p>
+             <p>
+                Hun aandacht is gevestigd op de jongen in het midden, de zeventienjarige die een microfoon vasthoudt - hij heet dan nog geen The Notorious B.I.G., maar hij heeft wel al de bijnaam Big. Hij rapt, Alsof zijn leven er vanaf hangt. Snel, soepel. Ter plaatse verzonnen teksten.
+            </p>
+        </article>
+    </section>
+    <section class="tekst sf2">
+
+        <article>
+          <p>
+           De levenslust van zijn woorden is onmiskenbaar - juist doordat hij alleen wordt ondersteund door een weinig opvallende drumbeat. De kale muziek legt de nadruk op die onvermoeibare stem, waarmee hij zijn woorden behendig aan elkaar plakt en de aandacht moeiteloos vasthoudt. Dan al, terwijl nog niemand hem kent, terwijl hij nog geen status of verwachtingen heeft, geen platencontract.
+            </p>
+             <p>
+                Dat maakt het filmpje ook zo sprekend, het geeft aan hoe makkelijk het rappen hem afging, alsof het in zijn DNA zat. En om hem heen, op die straathoek, ontstaat vrijwel meteen unanieme bewondering; toeschouwers joelen zodra hij een zoveelste punchline uitspreekt, ze juichen hem toe, ze komen allemaal in beweging.
+            </p>
+        </article>
+    </section>
+-->
+
+    <!--
+   <nav id="nav1">
+    <a href="#" onclick="tune1.play()">Home</a>
+    <a href="#" onmousedown="bleep.play()">About Us</a>
+    <a href="#" onmousedown="bleep.play()">Services</a>
+    <a href="#" onmousedown="bleep.play()">Contact</a>
+  </nav>
+-->
+    <!--
+   <main>
+     <div class="tune1"></div>
+        <div class="tune2"></div>
+          <div class="tune3"></div>
+            <div class="tune4"></div>
+              <div class="tune5"></div>
+
+   </main>
+-->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,617 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*MENU-------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+span {
+    position: absolute;
+    z-index: 1;
+    right: 25px;
+    top: 20px;
+    color: white;
+    position: fixed;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    transition: 0.6s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    /*    margin-left: 5%;*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: -2px 2px 1px grey;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 1em;
+    color: #fff;
+    display: block;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    /*
+    display: flex;
+    justify-content: center;
+*/
+    position: absolute;
+    left: 46vw;
+    bottom: 6%;
+    font-size: 8vw;
+    color: white;
+}
+
+
+/*
+
+BODYYYYYY_______________________________
+*/
+
+body {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+.bodyinner section {
+    /*    border-bottom: 1px solid white;*/
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.bodyinner {
+    margin: 0;
+}
+
+
+/*
+.home section:nth-child(1) {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+*/
+
+
+/*
+
+BODYYYYYY_______________________________
+*/
+
+.tekst {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tekst h3 {
+    line-height: 50px;
+}
+
+.black {
+    background-color: black
+}
+
+.white {
+    background-color: black
+}
+
+.tekst {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sf1 {
+    background-image: url(brooklyn.jpg)
+}
+
+.sf2 {
+    background-image: url(brooklynwhite.jpg)
+}
+
+.tekst p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 00;
+    color: black;
+    /*background-color: rgba(255, 255, 255, .8);*/
+    padding: 10px;
+    margin: 5px
+}
+
+article {
+    vertical-align: middle;
+}
+
+
+/*
+.img{
+    background-image: url(img1.jpg);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+.freestyleheader {
+    /*    width: 95vw;*/
+    height: 45vh;
+}
+
+.freestyleheader h3 {
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    top: 21vh;
+    text-align: left;
+    color: white;
+    width: 95%;
+    left: 0;
+    /*    font-size: 5em;*/
+    font-size: 12vw;
+    letter-spacing: -.5vw;
+    text-shadow: -2px 2px 1px orange;
+    padding-left: 5%;
+}
+
+.freestyleheader video {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    object-fit: cover;
+    height: 47vh;
+    width: 95%;
+    filter: grayscale(1);
+}
+
+.sectionfreestyle {
+    padding-top: 30px;
+    width: 90vw;
+    height: 0vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tunebutton {
+    background-color: darkgrey;
+    /*    padding: 7vh 12vw 7vh 12vw;*/
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 2em;
+    animation: tunebutton .5s ease-in forwards;
+    opacity: 0;
+    border: solid 2px;
+    border-bottom-color: lightgray;
+    border-right-color: lightgray;
+    border-top-color: dimgrey;
+    border-left-color: dimgrey;
+}
+
+.tunebutton:nth-child(1) {
+    background-color: darkgrey;
+}
+
+.tunebutton:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.tunebutton:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.tunebutton:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.tunebutton:nth-child(5) {
+    animation-delay: .5s;
+}
+
+.tunebutton:nth-child(6) {
+    animation-delay: .7s;
+}
+
+@keyframes tunebutton {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        margin-top: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tunebutton:active {
+    background-color: blue;
+}
+
+.back {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    left: 25px;
+    top: 15px;
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.down {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    left: 176px;
+    bottom: 30px;
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(270deg);
+    transition: all 0.5s;
+}
+
+
+/*
+
+ODEEEEEE-________________________________________
+*/
+
+.odebody {
+    margin: 0;
+}
+
+.ode h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    color: white;
+    /*    font-size: 5em;*/
+    font-size: 12vw;
+    letter-spacing: -.5vw;
+    text-shadow: -2px 2px 1px orange;
+    padding-left: 5%;
+    padding-bottom: .5em;
+    padding-top: 4.1em;
+    margin: 0;
+    background-color: aqua;
+    background-image: url(who.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.ode textarea {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    max-width: 94.2vw;
+    height: 53vh;
+    /*    background-image: url(brooklyn.jpg);*/
+    color: black;
+    font-size: 3em;
+    display: flex;
+    padding-left: 5%;
+}
+
+.ode textarea:focus {
+    background-color: red;
+}
+
+
+/*
+
+Rouw-________________________________________
+*/
+
+h3.juicy {
+    background-image: url(rouwendirect.jpg);
+}
+
+
+/*
+
+Aantrekking-________________________________________
+*/
+
+.clothes section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.clothes section:nth-child(1) {
+    background-color: red;
+}
+
+.clothes section:nth-child(2) {
+    background-color: blue;
+}
+
+.clothes section:nth-child(3) {
+    background-color: olivedrab;
+}
+
+.clothes section:nth-child(4) {
+    background-color: pink;
+}
+
+.clothes section:nth-child(5) {
+    background-color: lightgoldenrodyellow;
+}
+
+.body img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(brooklyn.jpg);
+}
+
+.shirt {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(brooklyn.jpg);
+}
+
+.chain {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(brooklyn.jpg);
+}
+
+.glasses {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(brooklyn.jpg);
+}
+
+.crown {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(brooklyn.jpg);
+}
+
+.shirt img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.chain img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.glasses img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.crown img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.clothes h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    color: white;
+    /*    font-size: 5em;*/
+    font-size: 12vw;
+    font-weight: 700;
+    letter-spacing: -.5vw;
+    text-shadow: -2px 2px 1px orange;
+    padding-left: 5%;
+    padding-bottom: .5em;
+    padding-top: 2.3em;
+    margin: 0;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(faith.jpg);
+}
+
+.glasses h4 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    color: white;
+    /*    font-size: 5em;*/
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -.5vw;
+    text-shadow: -2px 2px 1px black;
+    padding-left: 5%;
+    position: absolute;
+    z-index: 8;
+    bottom: 3em
+}

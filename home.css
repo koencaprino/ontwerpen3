@@ -142,11 +142,11 @@ table {
 span {
     position: absolute;
     z-index: 1;
-    right: 50px;
-    top: 30px;
+    right: 25px;
+    top: 20px;
     color: white;
     position: fixed;
-    font-size: 6rem;
+    font-size: 2em;
     cursor: pointer;
 }
 
@@ -160,28 +160,28 @@ span {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, .9);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .overlay-content {
     position: relative;
-    top: 30%;
+    top: 10%;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-top: 30px;
-    margin-left: 5%;
+    /*    margin-left: 5%;*/
     font-family: 'Work Sans', sans-serif;
-    text-shadow: -5px 5px 3px grey;
+    font-weight: 700;
+    text-shadow: -2px 2px 1px grey;
 }
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 90px;
-    line-height: 100px;
+ font-size: 50px;
+    line-height: 1em;
     color: #fff;
     display: block;
-    transition: 0.3s;
 }
 
 .overlay a:hover,
@@ -201,10 +201,34 @@ span {
     color: white;
 }
 
-
+html{
+scroll-behavior: smooth;
+}
 /*BODY EN SECTIONS-----------------------*/
 
-body {
+
+/*
+.snaph {
+   font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vw);
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.snaph section{
+      border-right: 1px solid white;
+    padding: 1rem;
+    min-width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+*/
+
+.bodyhome {
     font-family: sans-serif;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
@@ -305,14 +329,14 @@ h2 {
     width: 95%;
     left: 0;
     /*    font-size: 5em;*/
-    font-size: 12vw;
+    font-size: 3.4em;
     letter-spacing: -.5vw;
-    text-shadow: -5px 5px 3px grey;
+    text-shadow: -2px 2px 1px grey;
     padding-left: 5%;
 }
 
 h2 a {
-    text-shadow: -5px 5px 3px orange;
+    text-shadow: -2px 2px 1px orange;
     color: white;
     text-decoration: none;
     margin-top: 1em;
@@ -320,30 +344,31 @@ h2 a {
     /*    z-index: -1;*/
 }
 
+
+/*
 section a {
+    font-family: 'Anonymous Pro', monospace;
     position: absolute;
     bottom: 11vh;
     width: 50%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-size: 2em;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-size: 1.2em;
     text-decoration: none;
+    color: white;
+}
+*/
+
+section a:nth-child(2) {
     color: black;
 }
 
-section a:visited {
-    color: black;
-}
+section a:visited {}
 
-a.lezen {
-    left: 0vh;
-    background-color: indianred;
-}
 
-a.extra {
-    right: 0vh;
-    background-color: paleturquoise;
-}
+/*FREESTYLE PAGINA-----------------*/
+
+.bodyinner {}
 
 
 /*FREESTYLE PAGINA-----------------*/
@@ -354,7 +379,22 @@ a.extra {
 
 .freestyleheader {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
+}
+
+.freestyleheader h3 {
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    top: 22vh;
+    text-align: left;
+    color: white;
+    width: 95%;
+    left: 0;
+    /*    font-size: 5em;*/
+    font-size: 12vw;
+    letter-spacing: -.5vw;
+    text-shadow: -2px 2px 1px orange;
+    padding-left: 5%;
 }
 
 .freestyleheader video {
@@ -362,14 +402,15 @@ a.extra {
     top: 0;
     left: 0;
     object-fit: cover;
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
     filter: grayscale(1);
 }
 
 .sectionfreestyle {
-    padding-top: 75px;
+    padding-top: 30px;
     width: 90vw;
+    height: 0vh;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -380,11 +421,15 @@ a.extra {
     background-color: darkgrey;
     /*    padding: 7vh 12vw 7vh 12vw;*/
     width: 30%;
-    height: 15vh;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
     margin-bottom: 2em;
     animation: tunebutton .5s ease-in forwards;
     opacity: 0;
-    border: solid 5px;
+    border: solid 2px;
     border-bottom-color: lightgray;
     border-right-color: lightgray;
     border-top-color: dimgrey;
@@ -429,9 +474,9 @@ a.extra {
 }
 
 .back {
-  left: 50px;
-    top: 50px;
-    font-size: 3em;
+    left: 30px;
+    top: 30px;
+    font-size: 1.5em;
     color: red;
     position: absolute;
     z-index: 2;

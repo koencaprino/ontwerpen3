@@ -6,22 +6,25 @@
     <title>Ode aan Biggie</title>
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Work+Sans:800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="delighters.css">
 </head>
 
-<body>
+<body class="bodyhome">
 
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a onclick="closeNav()" href="home.html#freestyle">Freestyle</a>
-            <a onclick="closeNav()" href="home.html#rouw">Rouwe Directheid</a>
-            <a onclick="closeNav()" href="home.html#aantrekking">Aantrekkingskracht</a>
+            <a  onclick="closeNav()" href="home.html#freestyle">Freestyle</a>
+            <a  onclick="closeNav()" href="home.html#rouw"> Directheid</a>
+            <a onclick="closeNav()" href="home.html#aantrekking">Aantrekking</a>
             <a onclick="closeNav()" href="home.html#verhalen">Verhalen</a>
             <a onclick="closeNav()" href="home.html#teksten">Teksten</a>
             <a onclick="closeNav()" href="home.html#ode">Ode</a>
+
         </div>
     </div>
-    <span onclick="openNav()">&#9776;</span>
+    <span class="menubutton" onclick="openNav()">&#9776;</span>
 
     <!--   <div class="menu"> <div class="close"><p>close</p></div> </div>-->
 
@@ -32,43 +35,31 @@
             <video src="17freestyle.mp4" poster="biggiebg.jpg" autoplay="autoplay" loop="loop" muted playsinline>
                 <source src="17freestyle.mp4" type="mp4">
             </video>
-            <h2>Als 17 jarige deed hij een freestyle op straat in Brooklyn.</h2>
-            <a class="lezen" href="17years.html">Lees meer</a>
-            <a class="extra" href="freestyle.html">Freestyle</a>
+            <h2 class="foo" data-delighter>Als 17 jarige deed hij een <a href="freestyle1.html">freestyle op straat in Brooklyn.</a></h2>
         </section>
 
-        <section id="rouw">
-            <h2>De rouwe directheid van Biggie was toen al te horen.</h2>
-            <a class="lezen" href="">Lees meer</a>
-            <a class="extra" href="">Freestyle</a>
+        <section id="rouw" >
+            <h2 class="foo" data-delighter ><a href="rouw.html">De rouwe directheid van Biggie</a> was toen al te horen.</h2>
         </section>
 
         <section id="aantrekking">
-            <h2>In combinatie met zijn aantrekkings kracht</h2>
-            <a class="lezen" href="">Lees meer</a>
-            <a class="extra" href="">Freestyle</a>
+            <h2 class="foo" data-delighter>In combinatie met <a href="aantrekking.html">zijn aantrekkings kracht</a></h2>
         </section>
 
         <section id="verhalen">
-            <h2>Kon hij op een niets- ontziende wijze zijn verhalen vertellen</h2>
-            <a class="lezen" href="">Lees meer</a>
-            <a class="extra" href="">Freestyle</a>
+            <h2 class="foo" data-delighter>Kon hij op een nietsontzien- de wijze <a>zijn verhalen vertellen.</a></h2>
         </section>
 
         <section id="teksten">
-            <h2>Zijn teksten kwamen eruit met souplesse...</h2>
-            <a class="lezen" href="">Lees meer</a>
-            <a class="extra" href="">Freestyle</a>
+            <h2 class="foo" data-delighter><a>Zijn teksten</a> kwamen eruit met souplesse...</h2>
         </section>
 
         <section id="ode">
-            <h2>Zoals niemand dat ooit kon, zelfs zijn navolgers niet.</h2>
-            <a class="lezen" href="">Lees meer</a>
-            <a class="extra" href="">Freestyle</a>
+            <h2 class="foo" data-delighter><a href="ode.html">Zoals niemand dat ooit kon</a>, zelfs zijn navolgers niet.</h2>
         </section>
     </main>
 
-
+    <script type="text/javascript" src="delighters.js"></script>
     <script src="script.js"></script>
 </body>
 

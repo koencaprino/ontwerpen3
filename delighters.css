@@ -1,0 +1,40 @@
+/* when the library loads, each [data-delighter]
+      gets the .delighter class */
+
+   .foo.delighter  {
+      transition: all .8s ease-out;
+      transform: translateY(20%);
+      opacity: 0;
+   }
+
+   /* the .started class is set when the top
+      of [data-delighter] is at 0.75 of the viewport
+      (where 0 is top and 1 is bottom) */
+
+   .foo.delighter.started {
+      transform: none;
+      opacity: 1;
+   }
+
+   /* an extra .ended state is set when the bottom
+      of [data-delighter] is at 0.75 of the viewport
+      (where 0 is top and 1 is bottom) */
+
+   .foo.delighter.started.ended {
+
+   }
+
+/*
+.body.delighter img{
+      transition: all .8s ease-out;
+      transform: translateY(50%);
+      opacity: 0;
+}
+
+  .body.delighter.started img{
+      transform: none;
+      opacity: 1;
+      position: fixed;
+   }
+*/
+
