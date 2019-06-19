@@ -213,7 +213,7 @@ embed {
 .button {
     display: flex;
     justify-content: center;
-    margin-top: -25%;
+    margin-top: -35%;
     opacity: 0;
     animation: bekijkode 1s ease-out forwards;
     animation-delay: 18.5s;
@@ -232,9 +232,11 @@ embed {
 
 .bekijkode {
     font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
     color: white;
-    bottom: 200px;
-    font-size: 3em;
+    font-size: 5em;
+    text-decoration: none;
+      text-shadow: -3px 3px 1px #DD6E42;
 }
 
 main {

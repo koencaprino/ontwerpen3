@@ -170,13 +170,14 @@ span {
 .overlay-content {
     position: relative;
     top: 10%;
+    right: 5%;
     width: 100%;
-    text-align: center;
+    text-align: right;
     margin-top: 30px;
     /*    margin-left: 5%;*/
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    text-shadow: -2px 2px 1px grey;
+    text-shadow: -2px 2px 1px #DD6E42;
 }
 
 .overlay a {
@@ -199,9 +200,9 @@ span {
     justify-content: center;
 */
     position: absolute;
-    left: 46vw;
+    right: 10%;
     bottom: 6%;
-    font-size: 8vw;
+    font-size: 3em;
     color: white;
 }
 
@@ -315,7 +316,8 @@ article {
     /*    font-size: 5em;*/
     font-size: 12vw;
     letter-spacing: -.5vw;
-    text-shadow: -2px 2px 1px orange;
+        font-weight: 600;
+    text-shadow: -2px 2px 1px #363636;
     padding-left: 5%;
 }
 
@@ -395,7 +397,7 @@ article {
 }
 
 .tunebutton:active {
-    background-color: blue;
+    background-color: paleturquoise;
 }
 
 .back {
@@ -439,9 +441,10 @@ ODEEEEEE-________________________________________
     text-align: left;
     color: white;
     /*    font-size: 5em;*/
+    font-weight: 600;
     font-size: 12vw;
     letter-spacing: -.5vw;
-    text-shadow: -2px 2px 1px orange;
+    text-shadow: -2px 2px 1px #363636;
     padding-left: 5%;
     padding-bottom: .5em;
     padding-top: 4.1em;
@@ -459,14 +462,16 @@ ODEEEEEE-________________________________________
     max-width: 94.2vw;
     height: 53vh;
     /*    background-image: url(brooklyn.jpg);*/
-    color: black;
-    font-size: 3em;
+    color: grey;
+    font-size: 2em;
     display: flex;
     padding-left: 5%;
+    padding-top: 20px;
 }
 
 .ode textarea:focus {
-    background-color: red;
+    background-image: url(brooklynwhite.jpg);
+    color: black;
 }
 
 
@@ -580,6 +585,10 @@ Aantrekking-________________________________________
     bottom: 0;
     z-index: 1;
 }
+.juicy{
+    font-weight: 600;
+
+}
 
 .clothes h3 {
     font-family: 'Work Sans', sans-serif;
@@ -587,9 +596,9 @@ Aantrekking-________________________________________
     color: white;
     /*    font-size: 5em;*/
     font-size: 12vw;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -.5vw;
-    text-shadow: -2px 2px 1px orange;
+    text-shadow: -2px 2px 1px #363636;
     padding-left: 5%;
     padding-bottom: .5em;
     padding-top: 2.3em;
@@ -601,7 +610,7 @@ Aantrekking-________________________________________
     background-image: url(faith.jpg);
 }
 
-.glasses h4 {
+.glasses h4 a {
     font-family: 'Work Sans', sans-serif;
     text-align: left;
     color: white;
@@ -609,9 +618,34 @@ Aantrekking-________________________________________
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -.5vw;
-    text-shadow: -2px 2px 1px black;
+    text-shadow: -2px 2px 1px #DD6E42;
     padding-left: 5%;
     position: absolute;
     z-index: 8;
-    bottom: 3em
+    bottom: 3em;
+    text-decoration: none;
+}
+.glasses h4:visited{
+    color: white;
+
+}
+
+.storyheader h3{
+   font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    color: white;
+    /*    font-size: 5em;*/
+    font-size: 12vw;
+    font-weight: 600;
+    letter-spacing: -.5vw;
+    text-shadow: -2px 2px 1px #363636;
+    padding-left: 5%;
+    padding-bottom: .5em;
+    padding-top: 2.3em;
+    margin: 0;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(aantrekking.jpg);
 }

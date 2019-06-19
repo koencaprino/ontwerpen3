@@ -166,19 +166,20 @@ span {
 .overlay-content {
     position: relative;
     top: 10%;
+    right: 5%;
     width: 100%;
-    text-align: center;
+    text-align: right;
     margin-top: 30px;
     /*    margin-left: 5%;*/
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    text-shadow: -2px 2px 1px grey;
+    text-shadow: -2px 2px 1px #DD6E42;
 }
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
- font-size: 50px;
+    font-size: 50px;
     line-height: 1em;
     color: #fff;
     display: block;
@@ -195,15 +196,17 @@ span {
     justify-content: center;
 */
     position: absolute;
-    left: 46vw;
+    right: 10%;
     bottom: 6%;
-    font-size: 8vw;
+    font-size: 3em;
     color: white;
 }
 
-html{
-scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
+
+
 /*BODY EN SECTIONS-----------------------*/
 
 
@@ -331,12 +334,12 @@ h2 {
     /*    font-size: 5em;*/
     font-size: 3.4em;
     letter-spacing: -.5vw;
-    text-shadow: -2px 2px 1px grey;
+    text-shadow: -2px 2px 1px #363636;
     padding-left: 5%;
 }
 
 h2 a {
-    text-shadow: -2px 2px 1px orange;
+    text-shadow: -2px 2px 1px #DD6E42;
     color: white;
     text-decoration: none;
     margin-top: 1em;
