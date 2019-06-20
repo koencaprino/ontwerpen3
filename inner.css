@@ -228,6 +228,7 @@ body {
 
 .bodyinner {
     margin: 0;
+    background-color: black;
 }
 
 
@@ -346,6 +347,7 @@ article {
     /*    padding: 7vh 12vw 7vh 12vw;*/
     font-size: 1em;
     color: white;
+    font-weight: 600;
     text-align: center;
     width: 30%;
     padding-top: 40px;
@@ -398,6 +400,7 @@ article {
 
 .tunebutton:active {
     background-color: paleturquoise;
+    animati
 }
 
 .back {
@@ -467,11 +470,13 @@ ODEEEEEE-________________________________________
     display: flex;
     padding-left: 5%;
     padding-top: 20px;
+
 }
 
 .ode textarea:focus {
     background-image: url(brooklynwhite.jpg);
     color: black;
+    transition: all 1s ease;
 }
 
 
@@ -484,6 +489,16 @@ h3.juicy {
     background-image: url(rouwendirect.jpg);
 }
 
+.iframeanimatie{
+animation: iframe .8s ease-out forwards ;
+}
+
+@keyframes iframe {
+    0% {margin-top: 10em;
+    opacity: 0;}
+    100% {margin-top: 0;
+    opacity: 1}
+}
 
 /*
 
